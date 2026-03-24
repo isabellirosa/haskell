@@ -25,3 +25,13 @@ s 1 = 1
 s x = if mod x 2 == 0 
       then s (x - 1) 
       else x + s (x - 2)
+
+f 0 = 1
+f n = n * f (n - 1) + 1
+
+g 0 = 0
+g 1 = 1
+g n = g (n-1) + 2 * g (n-2)
+
+g 0 = 2
+g n = g (n - 1) + 2
